@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Directorio Started: Serving Web Content</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+<body>
+	<div>
+		<div>
+			<div class="tabs is-centered">
+				<ul>
+					<li><a href = "/Directorio/CCA">CCA</a></li>
+					<li><a href = "/Directorio/CA">CA</a></li>
+					<li><a href = "/Directorio/CEME">CEME</a></li>
+				</ul>
+			</div>
+			<article class="message">
+				<div class="message-header">
+					<p>API Directorio</p>
+					<button class="delete" aria-label="delete"></button>
+				</div>
+				<div class="message-body">
+					<p th:text="'Area: ' + ${DirectorioDTO.area} " />
+					<p th:text="'Correo oficial: ' + ${DirectorioDTO.correooficial} " />
+					<p th:text="'Correo personal:  ' + ${DirectorioDTO.correopersonal} " />
+					<p th:text="'id: ' + ${DirectorioDTO.id} " />
+					<p th:text="'Nombre: ' + ${DirectorioDTO.nombre} " />
+					<p th:text="'Telefono: ' + ${DirectorioDTO.telefono} " />
+				</div>
+			</article>
+		</div>
+
+	</div>
+	<br>
+	<br>
+
+	<a class="button is-danger" href="/">MENU</a>
+
+	<footer> Examen 2do Parcial </footer>
+</body>
+
+</html>

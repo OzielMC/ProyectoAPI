@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Planetas Started: Serving Web Content</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+<body>
+	<div>
+		<div>
+			<div class="tabs is-centered">
+				<ul>
+					<li><a href="/Planetas/eris">eris</a></li>
+					<li><a href="/Planetas/haumea">haumea</a></li>
+					<li><a href="/Planetas/jupiter">jupiter</a></li>
+				</ul>
+			</div>
+			<br>
+			<article class="message">
+				<div class="message-header">
+					<p>API Directorio</p>
+					<button class="delete" aria-label="delete"></button>
+				</div>
+				<div class="message-body">
+					<p th:text="'UA: ' + ${startDTO.UA} " />
+					<p th:text="'id: ' + ${startDTO.id} " />
+					<p th:text="'milesk:  ' + ${startDTO.milesk} " />
+					<p th:text="'Ceres: ' + ${startDTO.nombre} " />
+				</div>
+			</article>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<a class="button is-danger" href="/"> MENU </a>
+
+	<footer> Examen 2do Parcial </footer>
+</body>
+
+</html>
